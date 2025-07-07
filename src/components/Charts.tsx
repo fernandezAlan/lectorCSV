@@ -27,7 +27,7 @@ return (
         dataKey="value"
       >
         {pieDataParcial.map((entry, index) => (
-          <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+          <Cell key={`cell-${index}-${entry.name}`} fill={COLORS[index % COLORS.length]} />
         ))}
       </Pie>
       <Tooltip />
